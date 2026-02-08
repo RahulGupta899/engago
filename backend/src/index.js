@@ -8,7 +8,7 @@ app.get('/health', (req, res) => {
 });
 
 const server = app.listen(config.port, () => {
-  logger.info({ port: config.port || 7000, env: config.env }, 'Server started');
+  logger.info({ port: 7000, env: config.env }, 'Server started');
 });
 
 const shutdown = (signal) => {
